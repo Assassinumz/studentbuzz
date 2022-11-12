@@ -13,12 +13,12 @@ The frontend of this project is created using **REACT**
 
 ### Views
 
->Creation of  University Login , Student Login , Faculty Login is completed . 
->Creation of University Signup , Faculty creation , Student Signup is completed .
->Creation of Classes is done .
+-Creation of  University Login , Student Login , Faculty Login is completed . 
+-Creation of University Signup , Faculty creation , Student Signup is completed .
+-Creation of Classes is done .
 
 
 ##  Backend
->Use of Firebase authentication
->Use of Replit to deploy the webapp
->Use of Domain name from GoDaddy Registry 
+-Use of Firebase authentication
+-Use of Replit to deploy the webapp
+-Use of Domain name from GoDaddy Registry 
