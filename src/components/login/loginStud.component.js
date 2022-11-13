@@ -7,6 +7,7 @@ const Login = () => {
     const[email, setEmail] = useState('')
     const[password, setPassword] = useState('')
     const [typeOf, setTypeOf] = useState()
+    const [loggedIn, setLoggedIn] = useState(false)
     const [user, setUser] = useState(localStorage.getItem('user'))
 
     const getTypeOf = async () => {
@@ -19,6 +20,7 @@ const Login = () => {
     }
 
     const handleSubmit = async (e) => {
+        
         var data = {
             email,
             password
@@ -32,9 +34,11 @@ const Login = () => {
         })
     
         const json = await response.json()
+        console.log(json)
 
         if (response.ok) {
-            localStorage.setItem('user', json.uid)   
+            localStorage.setItem('user', json.uid)
+            setLoggedIn(true)
         }
     }
 
@@ -44,7 +48,7 @@ const Login = () => {
 
   return (  
     <>   
-    {typeOf?.student && <Navigate to="/student/feed" />}
+    {loggedIn ? <Navigate to="/student/feed" /> : null}
       <div className="min-w-screen min-h-screen bg-gray-200 flex items-center justify-center px-5 py-5">
         <div className="bg-gray-100 text-gray-500 rounded-3xl shadow-xl w-full overflow-hidden" style={{"maxWidth": "1000px"}}>
             <div className="md:flex w-full">
