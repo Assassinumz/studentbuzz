@@ -25,7 +25,6 @@ const Profile = () => {
     
         if(response.ok){
             setUniProfile(json)
-            console.log(json)
         }
         else{
           console.log(json.error)

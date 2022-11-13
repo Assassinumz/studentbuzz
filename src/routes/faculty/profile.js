@@ -5,7 +5,7 @@ const Profile = () => {
     return (  
         <>
             <FacultyList />
-            {/* <ProfileFaculty /> */}
+            { <ProfileFaculty /> }
         </>
     );
 }

@@ -11,6 +11,7 @@ export default function Class() {
     const  [hasClass, setHasClass] = useState(false);
     const [user, setUser] = useState(localStorage.getItem('user'))
     const [faculty, setFaculty] = useState(true)
+    const [allClubs, setAllClubs] = useState([])
 
     const getFac = async () => {
         let req = await fetch('https://studentbuzz.assassinumz.repl.co/api/faculty/get-faculty', {
@@ -32,10 +33,21 @@ export default function Class() {
         }
 
     }
+
+    const getAllClubs = async () => {
+        let req = await fetch('https://studentbuzz.assassinumz.repl.co/api/faculty/allClasses', {
+            headers: {'Authorization': user},
+        })
+
+        let json = await req.json()
+
+        setAllClubs(json.classes)
+    }
     
     useEffect(() => {
 
         getFac()
+        getAllClubs()
     }, [user]);
 
 
@@ -51,14 +63,16 @@ export default function Class() {
                     </div>
                     :
                     <div className="mt-20 w-[82vw] px-5 py-4 self-end mr-5 rounded-sm shadow-sm bg-white">
-                    <h3 className="text-2xl font-light py-3 "> Classes In ISE </h3>
+                    <h3 className="text-2xl font-light py-3 "> Classes In University </h3>
                     <div className="flex flex-wrap">
-                        <ClubCard/>
-                        <ClubCard/>
-                        <ClubCard/>
-                        <ClubCard/>
-                        <ClubCard/>
-                        <ClubCard/>
+                        {
+                            allClubs?.map((item, key) => {
+                                return (
+                                    <ClubCard key={key} cls={item} isClass={true}/>
+                                )
+                            })
+                        }
+
                     </div>
                     </div>
                 }
