@@ -14,6 +14,7 @@ const UniversitySchema =  new Schema({
         type: String,
     }, {default: []}],
     students: [{type: String, default: []}],
+    faculties: [{type: String, default: []}],
     deparments: [{type: String, default: []}],
     transcript: {
         data: {type: Buffer, default: null},

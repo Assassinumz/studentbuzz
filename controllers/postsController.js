@@ -7,20 +7,30 @@ const Post = require('../models/post')
 const UploadPost = require('../middleware/upload')
 const fs = require('fs')
 var mime = require('mime-types')
-const storage = require('../firebase.js')
+const {storage} = require('../firebase.js')
 const { getDownloadURL, ref, uploadString } = require('firebase/storage')
 
 //common
 
 //faculty/common/student ---- 
 
-const get_posts = async(req, res) => {
-    //global posts
+const get_uni_posts = async(req, res) => {
+    // global posts
     // const hodPosts = await Post.find({'category':'hod'})
     // const facultyPosts = await Post.find({'category':'faculty'})
     // const clubPosts = await Post.find({'category':'club'})
-    const posts = await Post.find({})
+    var cond = req.user._id
+    const posts = await Post.find({"university":cond }).sort('-createdAt')
 
+    res.json({
+        posts
+    })
+}
+
+const get_posts = async(req, res)=>{
+  var cond = req.user.university
+  console.log(req.user)
+    const posts = await Post.find({"university":cond }).sort('-createdAt')
     res.json({
         // hodPosts,
         // facultyPosts,
@@ -30,8 +40,7 @@ const get_posts = async(req, res) => {
 }
 
 const create_posts = async (req, res) => {
-    console.log(process.cwd())
-        
+  
     let mimeType = mime.contentType(req.file.filename)
     let imageRef = ref(storage, `posts/` + req.file.filename);
     
@@ -85,5 +94,6 @@ module.exports = {
     get_posts,
     del_posts,
     msg_post,
-    create_posts
+    create_posts,
+    get_uni_posts
 }

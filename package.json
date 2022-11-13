@@ -4,7 +4,8 @@
   "description": "An interconnection platform for students",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +21,7 @@
     "morgan": "^1.10.0",
     "multer": "^1.4.5-lts.1",
     "nodemailer": "^6.8.0",
+    "nodemon": "^2.0.20",
     "path": "^0.12.7"
   }
 }

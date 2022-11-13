@@ -18,6 +18,7 @@ const facultySchema = new Schema({
     projects: [{
         type: String,
     }],
+    classes:[{type:Schema.Types.ObjectId, ref:"Class", default:[]}],
     type: {
         type: String,
         enum: ['faculty', 'hod'],
