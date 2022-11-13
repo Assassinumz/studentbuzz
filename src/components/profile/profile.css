@@ -1,0 +1,8 @@
+.header_profile{
+    display: flex;
+    justify-content: space-between;
+}
+
+.add_slot{
+    cursor: pointer;
+}

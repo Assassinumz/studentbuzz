@@ -1,0 +1,113 @@
+.student_home{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_left{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_list{
+    margin-top: 1.2em;
+}
+
+.menu{
+    position: fixed;
+    top: 6em;
+    width: 15em;
+}
+
+.cards_container{
+    min-width: 57%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffafa;
+}
+
+.connect_right{
+    min-width: 25%;
+    min-height: 100vh;
+    background-color:  #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+}
+
+.connect_right > p{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #6366f1;
+    align-self: flex-start;
+    padding-left: 1.5em;
+    margin-top: 1em;
+    position: relative;
+    top: 4em;
+}
+
+.each_card{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* searchbar color */
+.fpTHfu {
+    background-color: #e5e7eb!important;
+}
+
+/* connect menu */
+.css-1mcnwpj-MuiList-root {
+    width: 17em!important;
+    position: relative;
+    margin-top: 1em;
+    position: relative;
+    top: 6em;
+}
+
+
+/* search bar text */
+.lkTtqM{
+    text-align: center;
+}
+
+/* search bar */
+.fpTHfu{
+    z-index: -1!important;
+}
+
+/* posts */
+.css-1ri6ub7-MuiPaper-root-MuiCard-root{
+    margin-top: 6em;
+}
+
+/* search bar */
+.css-96uuyl{
+    position: relative;
+    border: 0.5px solid black;
+}
+
+#right_horizontal_nav{
+    position: relative;
+    right: 1.5em;
+}
+
+/* purple color for the icons */
+.MuiSvgIcon-root, .css-2kgxp5-MuiSvgIcon-root{
+    color: #6366f1;
+}
+
+.searc_container{
+    display: flex;
+}
+
+.search_left{
+    width: 65%;
+}
+
+.search_right{
+    width: 35%;    
+}

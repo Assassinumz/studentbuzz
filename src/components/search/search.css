@@ -1,0 +1,198 @@
+/* ------form--------- */
+.student_form_container{
+    position: relative;
+    top: 6em;
+}
+
+.mx-auto > h4{
+    font-size:1.3em;
+    font-weight:500;
+    position: relative;
+    left: -3em;
+    margin-bottom: 1em;
+}
+
+.student_form{
+    position: relative;
+    right:4em;
+    border:1px solid #6366f1;
+}
+
+/*---------radio------------ */
+.radio_container{
+    position: relative;
+    top: 6em;
+    left: -4em;
+  }
+  
+  .radio_color{
+    border: 0.5px solid #6366f1;
+  }
+  
+  .radio_color:hover{
+    background-color: #6366f1;
+    color: #ffffff; 
+  }
+  
+/* ----------list---------- */
+
+body{
+  background:#f5f5f5;
+  margin-top:20px;}
+
+.filter-result .job-box {
+  -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+          box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+  border-radius: 10px;
+  padding: 10px 35px;
+}
+
+.container{
+  margin-top: 8em;
+}
+
+.job-content > h5{
+  padding-left: 0.5em;
+}
+
+.mb-30{
+  margin-bottom: 30px;
+  width: 32em;
+  height: 3em;
+  position: relative;
+  left: 12em;
+}
+
+.card_size{
+  margin-bottom: 0.6em;
+}
+
+ul {
+  list-style: none; 
+}
+
+.list-disk li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.list-disk li:last-child {
+  margin-bottom: 0;
+}
+
+.job-box .img-holder {
+  height: 1em;
+  width: 1.5em;
+  background-color: #6366f1;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(78, 99, 215, 0.9)), to(#5a85dd));
+  background-image: linear-gradient(to right, rgba(78, 99, 215, 0.9) 0%, #5a85dd 100%);
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 65px;
+}
+
+.job-overview {
+  -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+          box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+  border-radius: 10px;
+}
+
+@media (min-width: 992px) {
+.job-overview {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+}
+}
+
+.job-overview .job-detail ul {
+  margin-bottom: 28px;
+}
+
+.job-overview .job-detail ul li {
+  opacity: 0.75;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.job-overview .job-detail ul li i {
+  font-size: 20px;
+  position: relative;
+  top: 1px;
+}
+
+.job-overview .overview-bottom,
+.job-overview .overview-top {
+  padding: 35px;
+}
+
+.job-content ul li {
+  font-weight: 600;
+  opacity: 0.75;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px;
+}
+
+@media (min-width: 768px) {
+.job-content ul li {
+  border-bottom: 0;
+  padding: 0;
+}
+}
+
+.job-content ul li i {
+  font-size: 20px;
+  position: relative;
+  top: 1px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+/*--------card---------- */
+
+.clubs_card_container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 12em;
+  top: 8em;
+}
+
+.card{
+  width: 10em;
+  height: 8em;
+  background-color: #6366f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin: 0.5em;
+}
+
+.card:hover{
+  cursor: pointer;
+  background-color: #4346ef;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.card > p{
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 500;
+}
