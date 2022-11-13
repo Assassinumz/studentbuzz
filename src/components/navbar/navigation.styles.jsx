@@ -32,7 +32,7 @@ export const NavbarContent = styled.div`
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 `
 
 export const NavbarLink = styled(Link)`
@@ -56,6 +56,7 @@ export const Button = styled(Link)`
     background-color: white;
     color: black;
     padding: 3px 24px;
+    margin-right: 1em;
     cursor: pointer;
     
     &:hover {

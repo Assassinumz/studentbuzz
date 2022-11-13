@@ -124,13 +124,13 @@ const ClassMembers = () => {
                 </div>
                 <div className="flex flex-col items-center">
                     <div>
-                        <h4 className="text-2xl text-center font-semibold my-5"> STUDENTS</h4>
+                        {/* <h4 className="text-2xl text-center font-semibold my-5"> STUDENTS</h4>
                         <ListItem/>
                         <ListItem/>
                         <ListItem/>
                         <ListItem/>
                         <ListItem/>
-                        <ListItem/>
+                        <ListItem/> */}
                     </div>
                 </div>
             </div>

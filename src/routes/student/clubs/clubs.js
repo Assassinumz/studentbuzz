@@ -10,7 +10,7 @@ export default function Clubs() {
         <div className='flex flex-col items-end justify-start bg-gray-100 min-h-screen'>
             <div className='flex flex-col' style={{"width": "80%"}}>
                 <CreateClub/>
-                <ClubList/>
+                {/* <ClubList/> */}
             </div>
         </div>
     </>

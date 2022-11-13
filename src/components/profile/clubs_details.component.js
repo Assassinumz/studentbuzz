@@ -50,12 +50,15 @@ const ClubsDetails = () => {
             </div>
 
             <div className="flex flex-wrap mb-3 justify-center">
-                <ClubCard/>
-                <ClubCard/>
-                <ClubCard/>
-                <ClubCard/>
-                <ClubCard/>
-                <ClubCard/>
+                <ClubCard key={1} cls={{"name": "Google Developers club", "members":[1,2,4], "followers": [4,2,5]}} isClass={false}/>
+                <ClubCard key={1} cls={{"name": "Google Developers club", "members":[1,2,4], "followers": [4,2,5]}} isClass={false}/>
+                <ClubCard key={1} cls={{"name": "Google Developers club", "members":[1,2,4], "followers": [4,2,5]}} isClass={false}/>
+                <ClubCard key={1} cls={{"name": "Google Developers club", "members":[1,2,4], "followers": [4,2,5]}} isClass={false}/>
+                <ClubCard key={1} cls={{"name": "Google Developers club", "members":[1,2,4], "followers": [4,2,5]}} isClass={false}/>
+                <ClubCard key={1} cls={{"name": "Google Developers club", "members":[1,2,4], "followers": [4,2,5]}} isClass={false}/>
+                <ClubCard key={1} cls={{"name": "Google Developers club", "members":[1,2,4], "followers": [4,2,5]}} isClass={false}/>
+                <ClubCard key={1} cls={{"name": "Google Developers club", "members":[1,2,4], "followers": [4,2,5]}} isClass={false}/>
+                
             </div>    
         </>
      );

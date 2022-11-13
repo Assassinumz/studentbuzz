@@ -9,7 +9,7 @@ const Notification = () => {
         <>
             <div className='student_home bg-gray-100 min-h-screen '> 
                 <NotificationList/>
-                <div className='flex flex-col items-center mr-44 mt-20'>
+                <div className='flex flex-col items-center w-[60%] mr-44 mt-20'>
                     <section className=" w-8/12 h-fit border rounded-xl flex flex-col bg-gray-50 mb-3">
                         <textarea className="w-11/12 m-3 focus:outline-none bg-gray-50 p-2 self-center" style={{border: "none", borderBottom: "1px solid rgba(0,0,0,0.2)"}} placeholder="Type your reply here..." rows="3"></textarea>
                         <div className="flex items-center justify-between px-4  pb-3">

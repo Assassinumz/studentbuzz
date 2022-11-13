@@ -25,6 +25,7 @@ const Profile = () => {
     
         if(response.ok){
             setUniProfile(json)
+            console.log(json)
         }
         else{
           console.log(json.error)
@@ -37,11 +38,11 @@ const Profile = () => {
 
     return (  
         <>
-            <div className='flex flex-col justify-end items-end bg-gray-100 min-h-screen ml-12'>
-                <div className="flex flex-col 1 w-9/12 mr-48 mt-20 min-h-screen">
+            <div className='flex flex-col items-center justify-start bg-gray-100 min-h-screen'>
+                <div className="flex flex-col w-1/2 mr-48 mt-20 min-h-screen">
                     <UniProfile setTab = {setTab} tab = {tab} uniProfile={uniProfile}/>
 
-                    <div className="bg-white pb-6 flex-">
+                    <div className="bg-white pb-6 flex-1">
                         <div className="container mt-0 mx-auto">
                             { tab?.faculties && <Faculties/>}
                             { tab?.achievements && <Achievements/>}
@@ -51,7 +52,7 @@ const Profile = () => {
                         </div>
                     </div>
                 </div>
-                {/* <Leaderboard/> */}
+                <Leaderboard/>
             </div>
         </>
     );

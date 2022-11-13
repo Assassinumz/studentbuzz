@@ -16,10 +16,11 @@ const Navbar = () => {
                     </div>
                     
                 </NavbarLogo>
-                <NavbarContent className="w-96">
+                <NavbarContent className="w-5/12">
                     <NavbarLink to='/'>Home</NavbarLink>
                     <NavbarLink to='login-faculty'>Faculty Login</NavbarLink>
                     <Button to='sign-up-uni' >Join as University</Button>
+                    <Button to='sign-up-student' > Student Signup</Button>
                 </NavbarContent>
             </NavbarContainer>
             <Outlet />

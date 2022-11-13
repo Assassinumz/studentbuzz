@@ -27,7 +27,6 @@ const CreatePost = () => {
 
         let json = await res.json()
         console.log(json)
-        window.location.reload()
     }
 
     return (  

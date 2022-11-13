@@ -10,8 +10,8 @@ const ClubCard = (props) => {
                             <h1 className="text-base font-semibold">{props.cls.name}</h1>
                         </div>
                         <div className="mt-2 flex items-center justify-evenly w-11/12">
-                            <button className="text-white text-sm font-semibold bg-indigo-400 p-1 px-2 rounded-lg shadow-md">{props.cls.students?.length} Members</button>
-                            {props.isClass === true ? null : <p className="">200 Followers</p>}
+                            <button className="text-white text-sm font-semibold bg-indigo-400 p-1 px-2 rounded-lg shadow-md">{props.cls.students?.length || props.cls.members?.length} Members</button>
+                            {props.isClass === true ? null : <p className="">{props.cls?.followers.length} Followers</p>}
                         </div>
                     </div>
                 </div>

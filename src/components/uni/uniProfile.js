@@ -43,7 +43,7 @@ const UniProfile = ({setTab, uniProfile}) => {
                                     
                                     <div className="flex sm:w-auto w-full  justify-center">
                                         <span className="text-gray-600 mr-4 tracking-wider"><span className="text-gray-400">{uniProfile?.students.length || 0}</span> Students</span>
-                                        <span className="text-gray-600 mr-4 tracking-wider"><span className="text-gray-400">{uniProfile?.faculties?.length || 0}</span> Faculties</span>
+                                        <span className="text-gray-600 mr-4 tracking-wider"><span className="text-gray-400">{uniProfile?.faculties.length || 0}</span> Faculties</span>
                                     </div>
                                     <div className="flex sm:w-auto sm:mt-0 mt-4 sm:mb-0 mb-2 w-full sm:justify-start justify-center">
                                         <a href="#" className="text-gray-600 mr-3 hover:text-indigo-400">

@@ -4,7 +4,7 @@ import StudentList from "../../components/student/connectStudent";
 const StudentProfile = () => {
     return ( 
         <>
-            <StudentList />
+            {/* <StudentList /> */}
             <ProfileStudent />
         </>
      );

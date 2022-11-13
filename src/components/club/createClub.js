@@ -1,6 +1,8 @@
-import UploadButton from "../upload/uploadButton";
+// import UploadButton from "../upload/uploadButton";
+import {useState} from 'react'
 
 const CreateClub = () => {
+
     return (  
         
         <>
@@ -23,9 +25,7 @@ const CreateClub = () => {
                                     <label htmlFor="club-description" className="col-form-label">Description</label>
                                     <textarea className="form-control" id="club-description"></textarea>
                                 </div>
-                                
-                                <UploadButton label = {{"label": "Upload Display Picture"}}/>
-
+                            
                             </form>
                         </div>
                         <div className="modal-footer">
