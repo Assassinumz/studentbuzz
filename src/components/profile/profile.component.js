@@ -14,22 +14,13 @@ const StudentDetail = (props) => {
                 <h3 className="text-xl font-semibold leading-normal text-blueGray-700 mb-2">
                     {props.faculty?.name}
                 </h3>
-                <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
-                <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
-                    Bangalore
-                </div>
-                <div className="mb-2 text-blueGray-600">
-                <i className="fas fa-university mr-2 text-lg text-blueGray-400"></i>
-                    Reva University
-                </div>
+                
                 <div className="mb-2 text-blueGray-600">
                 <i className="fas fa-solid fa-graduation-cap mr-2 text-lg text-blueGray-400"></i>
                     {props.faculty?.department}
                 </div>
                 
-                <div className="edit_profile">
-                    <input type={"button"} value={"Edit Profile"} style={{"padding":"0.6em","border":"0.5px solid #6366f1","borderRadius":"8px","marginTop":"1em"}} data-bs-toggle="modal" data-bs-target="#editProfileModal" data-bs-whatever="@getbootstrap"></input>
-                </div>
+               
             </div>
 
             <div className="modal fade" id="editProfileModal" tabIndex="-1" aria-labelledby="editProfileLabel" aria-hidden="true">
